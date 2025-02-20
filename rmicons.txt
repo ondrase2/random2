@@ -1,0 +1,10 @@
+brosers insert matching elements but whatever
+aa=(a)=>{
+for(let i=0;i<a.children.length;i++){
+try{if(a.children[i].hasAttribute("icon"))a.children[i].setAttribute("icon","");}catch(e){console.log(e)}
+console.log(a.children[i]);
+console.log(i);
+aa(a.children[i]);
+ }
+};
+aa(document.body)
